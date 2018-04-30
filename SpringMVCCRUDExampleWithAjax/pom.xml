@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+  http://maven.apache.org/POM/4.0.0
+  http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.infonal</groupId>
+  <artifactId>TakeHome</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>TakeHome Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+		<spring.version>4.0.1.RELEASE</spring.version>
+		<mongoDbDriver.version>3.5.0</mongoDbDriver.version>
+		<gson.version>2.8.2</gson.version>
+		<json.version>20090211</json.version>
+		<javaxServlet.version>4.0.0</javaxServlet.version>
+		<junit.version>3.8.1</junit.version>
+		<jquery.version>3.1.0</jquery.version>
+		<springDataMongoDb.version>2.0.0.RELEASE</springDataMongoDb.version>
+		<springMVC.version>5.0.0.RELEASE</springMVC.version>
+		<springContext.version>4.2.6.RELEASE</springContext.version>
+		<jstl.version>1.2</jstl.version>
+		<jsp.version>2.0</jsp.version>
+  </properties>
+ 
+	<dependencies>
+
+	<!-- GSON Dependency -->
+	<dependency>
+    	<groupId>com.google.code.gson</groupId>
+    	<artifactId>gson</artifactId>
+    	<version>${gson.version}</version>
+	</dependency>
+
+	<!-- JSON Dependency -->
+	<dependency>
+    	<groupId>org.json</groupId>
+    	<artifactId>json</artifactId>
+    	<version>${json.version}</version>
+	</dependency>
+
+	<!-- jUnit 3.8.1 Dependency -->
+    <dependency>
+    	<groupId>junit</groupId>
+      	<artifactId>junit</artifactId>
+      	<version>${junit.version}</version>
+      	<scope>test</scope>
+    </dependency>
+	
+	<!-- jQuery Dependency -->
+	<dependency>
+    	<groupId>org.webjars</groupId>
+    	<artifactId>jquery</artifactId>
+    	<version>${jquery.version}</version>
+	</dependency>
+	
+	<!-- Spring Data for MongoDB Dependency -->
+	<dependency>
+    	<groupId>org.springframework.data</groupId>
+    	<artifactId>spring-data-mongodb</artifactId>
+   		<version>${springDataMongoDb.version}</version>
+	</dependency>
+	
+    <!-- Spring MVC Framework 5.0.0 Dependency -->
+	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>${springMVC.version}</version>
+	</dependency>
+
+	<!-- Spring Context Dependency -->
+	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context-support</artifactId>
+    	<version>${springContext.version}</version>
+	</dependency>
+
+    <!-- JSTL Dependency -->
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+		<version>${jstl.version}</version>
+	</dependency>
+		
+	<!-- JSP 2.0 Dependency -->
+	<dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>jsp-api</artifactId>
+    	<version>${jsp.version}</version>
+    	<scope>provided</scope>
+	</dependency>
+		
+	<!-- Javax Servlet 4.0.0 Dependency -->
+	<dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>javax.servlet-api</artifactId>
+    	<version>${javaxServlet.version}</version>
+    	<scope>provided</scope>
+	</dependency>
+		
+	<!-- MongoDB Java Driver 3.5.0 Dependecy -->
+	<dependency>
+    	<groupId>org.mongodb</groupId>
+    	<artifactId>mongo-java-driver</artifactId>
+    	<version>${mongoDbDriver.version}</version>
+	</dependency>
+
+  </dependencies>
+ 
+  <build>
+    <finalName>TakeHome</finalName>
+  </build>
+  
+</project>
